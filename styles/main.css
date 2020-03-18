@@ -19,18 +19,17 @@ nav {
   font-size: 100%;
   vertical-align: baseline; }
 
-:focus {
-  outline: 0; }
+a:focus {
+  outline: none;
+  color: #253757; }
+
+input:focus {
+  outline: none;
+  border-bottom: #253757 2px solid; }
 
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 .header {
   color: white;
@@ -88,6 +87,9 @@ h1 {
       -webkit-transform: scale(1.3);
               transform: scale(1.3);
       opacity: 80%; }
+    .header__hire > a:focus {
+      outline: none;
+      color: #253757; }
   .header__title {
     position: absolute;
     top: 30%;
@@ -135,7 +137,21 @@ h1 {
       font-size: 15px;
       line-height: 22px;
       text-align: center;
-      width: 30%; }
+      width: 30%;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .header__title-button:hover {
+        padding: 11px 68px;
+        background-color: #007aff;
+        border: #ff9f8e 2px solid;
+        color: #ff9f8e;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+      .header__title-button:focus {
+        -webkit-box-shadow: 18px -5px 57px -1px white;
+                box-shadow: 18px -5px 57px -1px white;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
       @media screen and (max-width: 850px) {
         .header__title-button {
           -webkit-box-sizing: border-box;
@@ -351,10 +367,61 @@ h1 {
     cursor: pointer;
     z-index: 1; } }
 
+.section_about {
+  padding: 10% 20%;
+  text-align: left; }
+  .section_about-heading {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #253757; }
+  .section_about-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #6c788b; }
+
+@media screen and (max-width: 1000px) {
+  .section_about {
+    padding: 5% 10%;
+    text-align: justify; } }
+
+@media screen and (max-width: 1000px) {
+  .section_about {
+    padding: 2% 5%;
+    text-align: center; } }
+
+.section_expertise {
+  background-color: white;
+  padding-top: 10%; }
+  .section_expertise-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: #253757; }
+  .section_expertise_content {
+    padding: 65px 175px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(267px, 30%));
+    grid-gap: 177px;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .section_expertise-content_box {
+    padding: 10px; }
+
+@media screen and (max-width: 1000px) {
+  .section_expertise {
+    background-color: white;
+    padding: 10%; } }
+
 html,
 body {
-  margin: 0;
-  padding: 0;
   background-color: #f2f9ff; }
 
 /*# sourceMappingURL=main.css.map */

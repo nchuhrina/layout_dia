@@ -19,7 +19,12 @@ nav {
   font-size: 100%;
   vertical-align: baseline; }
 
-:focus {
-  outline: 0; }
+a:focus {
+  outline: none;
+  color: #253757; }
+
+input:focus {
+  outline: none;
+  border-bottom: #253757 2px solid; }
 
 /*# sourceMappingURL=reset.css.map */

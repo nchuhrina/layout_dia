@@ -1,0 +1,29 @@
+.section_about {
+  padding: 10% 20%;
+  text-align: left; }
+  .section_about-heading {
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #253757; }
+  .section_about-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #6c788b; }
+
+@media screen and (max-width: 1000px) {
+  .section_about {
+    padding: 5% 10%;
+    text-align: justify; } }
+
+@media screen and (max-width: 1000px) {
+  .section_about {
+    padding: 2% 5%;
+    text-align: center; } }
+
+/*# sourceMappingURL=about.css.map */

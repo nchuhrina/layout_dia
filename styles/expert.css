@@ -1,0 +1,26 @@
+.section_expertise {
+  background-color: white;
+  padding-top: 10%; }
+  .section_expertise-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: #253757; }
+  .section_expertise_content {
+    padding: 65px 175px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(267px, 30%));
+    grid-gap: 177px;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+  .section_expertise-content_box {
+    padding: 10px; }
+
+@media screen and (max-width: 1000px) {
+  .section_expertise {
+    background-color: white;
+    padding: 10%; } }
+
+/*# sourceMappingURL=expert.css.map */
