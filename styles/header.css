@@ -1,37 +1,3 @@
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-footer,
-header,
-nav {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline; }
-
-:focus {
-  outline: 0; }
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 .header {
   color: white;
   background-color: #007aff;
@@ -351,10 +317,4 @@ h1 {
     cursor: pointer;
     z-index: 1; } }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2f9ff; }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=header.css.map */
