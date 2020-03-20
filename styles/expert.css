@@ -9,18 +9,64 @@
     text-align: center;
     color: #253757; }
   .section_expertise_content {
-    padding: 65px 175px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(267px, 30%));
-    grid-gap: 177px;
-    -ms-flex-line-pack: center;
-        align-content: center; }
-  .section_expertise-content_box {
-    padding: 10px; }
+    padding: 65px 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 1000px) {
+      .section_expertise_content {
+        padding: 5%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .section_expertise_content_box {
+    margin-right: 10%;
+    text-align: center; }
+    @media screen and (max-width: 1000px) {
+      .section_expertise_content_box {
+        width: 90%;
+        margin: 20px auto; } }
+    .section_expertise_content_box:last-child {
+      margin-right: 0; }
+    .section_expertise_content_box-img {
+      width: 184px;
+      height: 166px;
+      border-radius: 25%;
+      margin-bottom: 40px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .section_expertise_content_box-img:hover {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        border-radius: 10%; }
+    .section_expertise_content_box-title {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 140%;
+      color: #253757;
+      margin-bottom: 15px; }
+    .section_expertise_content_box-text {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      color: #6c788b; }
 
 @media screen and (max-width: 1000px) {
   .section_expertise {
-    background-color: white;
     padding: 10%; } }
 
 /*# sourceMappingURL=expert.css.map */
