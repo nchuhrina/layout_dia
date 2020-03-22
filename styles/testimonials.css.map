@@ -1,0 +1,1 @@
+{"version":3,"sources":["testimonials.scss"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,aAAa,EAAA;EACb;IACE,aAAa,EAAA","file":"testimonials.css","sourcesContent":[".section_testimonials {\n  padding: 150px 227px;\n  height: 745px;\n  &_container {\n    height: 745px;\n  }\n}\n"]}

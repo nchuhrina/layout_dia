@@ -1,0 +1,1 @@
+{"version":3,"sources":["vision.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,kBAAkB;EAClB,uBAAuB,EAAA","file":"vision.css","sourcesContent":[".section_vision {\n  height: 700px;\n  position: relative;\n  background-color: white;\n}\n"]}

@@ -7,7 +7,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .header__logo {
-    padding-left: 25px; }
+    padding-left: 20px; }
   .header__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -27,7 +27,7 @@
     @media screen and (max-width: 850px) {
       .header__top {
         padding: 50px 10%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
       .header__top {
         padding: 10% 5%;
         -webkit-box-pack: justify;
@@ -38,7 +38,7 @@
     display: inline-block;
     border-bottom: 2px #ff9f8e solid;
     padding-bottom: 6px;
-    font: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 13px;
     line-height: 150%;
@@ -57,28 +57,28 @@
     .header__hire > a:focus {
       outline: none;
       color: #253757; }
+    @media screen and (max-width: 550px) {
+      .header__hire > a {
+        display: none; } }
   .header__title {
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 15%;
     width: 30%;
     height: 30%;
     margin-right: 5%;
     text-align: left; }
     @media screen and (max-width: 850px) {
       .header__title {
-        top: 15%; }
+        top: 15%;
+        left: 15%; }
         .header__title-button {
           width: 100%; } }
     @media screen and (max-width: 1000px) {
       .header__title {
         width: 50%;
-        left: 0;
+        left: 5%;
         position: center; } }
-    @media screen and (max-width: 850px) {
-      .header__title {
-        width: 100%;
-        display: block; } }
     .header__title-main {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
@@ -123,7 +123,10 @@
         .header__title-button {
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
-          width: 90%; } }
+          width: 90%;
+          -ms-flex-item-align: center;
+              align-self: center;
+          margin-top: 30px; } }
   .header__slider {
     display: inline-block;
     position: absolute;
@@ -148,7 +151,10 @@
     .header__slider-title, .header__slider-info {
       position: absolute;
       bottom: 60px;
-      left: 25%; }
+      left: 20%; }
+      @media screen and (max-width: 850px) {
+        .header__slider-title, .header__slider-info {
+          left: 15%; } }
     .header__slider-title {
       margin-bottom: 20px;
       font-family: "Poppins", sans-serif;
@@ -181,8 +187,13 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       background-image: url("../images/slider/Vector.jpg");
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s;
       background-position: center;
       background-repeat: no-repeat; }
+      .header__slider-switch:hover {
+        -webkit-transform: rotate(360deg) scale(1.1);
+                transform: rotate(360deg) scale(1.1); }
     .header__slider-switch:last-child {
       margin-left: 40px;
       background-image: url("../images/slider/Ellipse 4.jpg");
@@ -208,23 +219,27 @@
     transition: all 0.5s; }
     @media screen and (max-width: 850px) {
       .nav__list {
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-pack: stretch;
-            -ms-flex-pack: stretch;
-                justify-content: stretch;
-        width: 100%;
-        bottom: 25%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         -ms-flex-line-pack: baseline;
             align-content: baseline;
-        position: relative;
+        width: 100%;
+        height: 50%;
+        display: none;
+        position: absolute;
+        bottom: 380px;
+        top: 10%;
         z-index: 2;
-        background-color: rgba(255, 159, 142, 0.8);
+        background-color: rgba(255, 159, 142, 0.9);
         border-bottom-right-radius: 25%;
         border-top-left-radius: 25%; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
       .nav__list {
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
@@ -236,15 +251,17 @@
                 box-sizing: border-box;
         -ms-flex-line-pack: baseline;
             align-content: baseline;
-        width: 60%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
         display: none;
         position: absolute;
-        bottom: 380px;
-        right: 20%;
+        right: 0;
+        top: 10%;
         z-index: 2;
-        background-color: rgba(255, 159, 142, 0.8);
-        border-bottom-right-radius: 25%;
-        border-top-left-radius: 25%; } }
+        background-color: #ff9f8e;
+        border-bottom-right-radius: 25%; } }
   .nav__elem {
     font: "Poppins", sans-serif;
     margin: 0 32px;
@@ -255,13 +272,15 @@
         margin: 0 15px; } }
     @media screen and (max-width: 850px) {
       .nav__elem {
-        margin: 15px 10px;
-        font-size: 12px; } }
-    @media screen and (max-width: 500px) {
-      .nav__elem {
-        margin: 15px 0;
+        margin: 30px 40px;
         width: 100%;
-        font-size: 40px; } }
+        font-size: 30px; } }
+    @media screen and (max-width: 550px) {
+      .nav__elem {
+        text-align: center;
+        letter-spacing: 4px;
+        width: 100%;
+        font-size: 35px; } }
   .nav__link {
     position: relative;
     display: inline-block;
@@ -283,7 +302,7 @@
 .menu__toggle {
   display: none; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   .menu__span {
     display: block;
     position: absolute;
@@ -292,7 +311,12 @@
     height: 4px;
     background-color: white;
     -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s; }
+            transition-duration: 0.3s; } }
+  @media screen and (max-width: 850px) and (max-width: 500px) {
+    .menu__span {
+      left: 120px; } }
+
+@media screen and (max-width: 850px) {
     .menu__span::before, .menu__span::after {
       display: block;
       position: absolute;
