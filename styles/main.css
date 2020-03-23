@@ -1139,9 +1139,7 @@ h1 {
     font-weight: 600;
     font-size: 52px;
     line-height: 150%;
-    /* identical to box height, or 78px */
     text-align: center;
-    /* Text/100 */
     color: #253757; }
   .section_vision--text {
     font-family: "Open Sans", sans-serif;
@@ -1322,6 +1320,207 @@ h1 {
   @media screen and (max-width: 450px) {
     .decor__item_6::after {
       display: none; } }
+
+.footer {
+  background-color: white; }
+  .footer_container {
+    background-color: #007aff;
+    border-top-right-radius: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10% 15%; }
+    @media screen and (max-width: 1000px) {
+      .footer_container {
+        padding: 10%; } }
+    @media screen and (max-width: 850px) {
+      .footer_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 10%; } }
+  .footer_feedback {
+    margin-right: 20%;
+    width: 50%; }
+    @media screen and (max-width: 850px) {
+      .footer_feedback {
+        width: 90%;
+        margin: 5% auto; } }
+    .footer_feedback_heading {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 150%;
+      color: white;
+      margin-bottom: 50px; }
+  .footer_form {
+    display: block;
+    max-width: 460px; }
+    .footer_form_label {
+      display: block;
+      margin-bottom: 32px; }
+    .footer_form_input {
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      height: 54px;
+      padding: 16px 0;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      color: white; }
+      .footer_form_input:focus {
+        border-bottom-width: 2px;
+        -webkit-box-shadow: 18px -5px 57px -1px white;
+                box-shadow: 18px -5px 57px -1px white; }
+      .footer_form_input::-webkit-input-placeholder {
+        opacity: 0.7;
+        color: white; }
+      .footer_form_input::-moz-placeholder {
+        opacity: 0.7;
+        color: white; }
+      .footer_form_input:-ms-input-placeholder {
+        opacity: 0.7;
+        color: white; }
+      .footer_form_input::-ms-input-placeholder {
+        opacity: 0.7;
+        color: white; }
+      .footer_form_input::placeholder {
+        opacity: 0.7;
+        color: white; }
+    .footer_form_btn {
+      width: 226px;
+      height: 56px;
+      margin-top: 58px;
+      border: none;
+      padding: 18px 90px;
+      text-align: center;
+      background: #ff9f8e;
+      border-radius: 64px;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      color: white;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      outline: none; }
+      .footer_form_btn:hover {
+        background-color: white;
+        border: #ff9f8e 1px solid;
+        color: #ff9f8e;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-shadow: 18px -5px 57px -1px white;
+                box-shadow: 18px -5px 57px -1px white; }
+      .footer_form_btn:focus {
+        -webkit-box-shadow: 18px -5px 57px -1px white;
+                box-shadow: 18px -5px 57px -1px white;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+      @media screen and (max-width: 850px) {
+        .footer_form_btn {
+          width: 100%; } }
+  .footer_contact {
+    width: 60%; }
+    @media screen and (max-width: 850px) {
+      .footer_contact {
+        width: 90%;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 5%; } }
+    .footer_contact_heading {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 150%;
+      color: white;
+      margin-bottom: 55px; }
+      .footer_contact_heading--small {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: white;
+        opacity: 0.5;
+        margin-top: 48px; }
+    .footer_contact_phone, .footer_contact_addr {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: white;
+      margin-top: 10px; }
+    .footer_contact-facebook {
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      margin-top: 20px;
+      margin-right: 30px;
+      -webkit-mask-image: url("../images/face.svg");
+              mask-image: url("../images/face.svg");
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+              mask-position: center;
+      background-color: white;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer_contact-facebook:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        background: #d2ebff; }
+    .footer_contact-twitter {
+      height: 32px;
+      display: inline-block;
+      width: 32px;
+      margin-top: 20px;
+      margin-right: 30px;
+      -webkit-mask-image: url("../images/twit.svg");
+              mask-image: url("../images/twit.svg");
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+              mask-position: center;
+      background-color: white;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer_contact-twitter:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        background: #d2ebff; }
+    .footer_contact-insta {
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      margin-top: 20px;
+      margin-right: 30px;
+      -webkit-mask-image: url("../images/insta.svg");
+              mask-image: url("../images/insta.svg");
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+              mask-position: center;
+      background-color: white;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer_contact-insta:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        background: #d2ebff; }
 
 html,
 body {

@@ -1,0 +1,14 @@
+.form {
+  display: block;
+  max-width: 460px; }
+  .form__heading {
+    margin-bottom: 50px; }
+  .form__label {
+    display: block;
+    margin-bottom: 32px; }
+  .form__btn {
+    width: 226px;
+    height: 56px;
+    margin-top: 58px; }
+
+/*# sourceMappingURL=form.css.map */
