@@ -1,6 +1,72 @@
 .section_vision {
   height: 700px;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .section_vision_container {
+    margin: auto;
+    position: relative;
+    z-index: 2; }
+  .section_vision--heading {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    /* identical to box height, or 78px */
+    text-align: center;
+    /* Text/100 */
+    color: #253757; }
+  .section_vision--text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+    text-align: center;
+    color: #6c788b; }
+  .section_vision--button {
+    border: none;
+    margin-top: 65px;
+    margin-left: calc(50% - 113px);
+    padding: 18px 90px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    background: #ff9f8e;
+    border-radius: 64px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none; }
+    .section_vision--button:hover {
+      background-color: rgba(0, 122, 225, 0.6);
+      border: #ff9f8e 1px solid;
+      color: #ff9f8e;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .section_vision--button:focus {
+      -webkit-box-shadow: 18px -5px 57px -1px #007aff;
+              box-shadow: 18px -5px 57px -1px #007aff;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+    @media screen and (max-width: 650px) {
+      .section_vision--button {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 100%;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin: 30px auto; } }
 
 /*# sourceMappingURL=vision.css.map */
