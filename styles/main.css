@@ -1326,6 +1326,7 @@ h1 {
   .footer_container {
     background-color: #007aff;
     border-top-right-radius: 25%;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1346,6 +1347,7 @@ h1 {
         padding: 10%; } }
   .footer_feedback {
     margin-right: 20%;
+    margin-bottom: 120px;
     width: 50%; }
     @media screen and (max-width: 850px) {
       .footer_feedback {
@@ -1432,11 +1434,12 @@ h1 {
         .footer_form_btn {
           width: 100%; } }
   .footer_contact {
-    width: 60%; }
+    width: 60%;
+    margin-bottom: 120px; }
     @media screen and (max-width: 850px) {
       .footer_contact {
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 120px;
         text-align: center;
         padding: 5%; } }
     .footer_contact_heading {
@@ -1521,6 +1524,80 @@ h1 {
         -webkit-transform: scale(1.2);
                 transform: scale(1.2);
         background: #d2ebff; }
+  .footer_nav {
+    position: absolute;
+    bottom: 80px;
+    right: 180px; }
+    @media screen and (max-width: 850px) {
+      .footer_nav {
+        bottom: 40px;
+        right: 30px; } }
+    .footer_nav--list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; }
+      @media screen and (max-width: 850px) {
+        .footer_nav--list {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+    .footer_nav--logo {
+      height: 30px;
+      width: 50px;
+      -webkit-mask-image: url("../images/logo/dia-logo.svg");
+              mask-image: url("../images/logo/dia-logo.svg");
+      background-color: white;
+      -webkit-mask-position: center;
+              mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      margin-right: 380px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .footer_nav--logo:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        background: #d2ebff; }
+      @media screen and (max-width: 850px) {
+        .footer_nav--logo {
+          display: none; } }
+    .footer_nav--elem {
+      list-style: none;
+      margin-left: 35px; }
+      @media screen and (max-width: 850px) {
+        .footer_nav--elem {
+          margin-left: 15px; } }
+    .footer_nav--link {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 150%;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      text-align: left; }
+      .footer_nav--link:hover, .footer_nav--link:focus {
+        color: gray;
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); }
+      @media screen and (max-width: 850px) {
+        .footer_nav--link {
+          text-align: center;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 150%;
+          letter-spacing: 2px; } }
 
 html,
 body {
